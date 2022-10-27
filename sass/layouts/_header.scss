@@ -1,0 +1,116 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  height: 80px;
+}
+
+.header-container,
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  color: var(--accent-color);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: inline-block;
+}
+
+.header-logo-part {
+  color: #000000;
+}
+
+.header-nav-list {
+  display: flex;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-nav-link {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.header-nav-link.current {
+  color: var(--accent-color);
+}
+
+.header-nav-link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.header-nav-link:hover::after,
+.header-nav-link:focus::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.header-nav-link.current::after {
+  opacity: 1;
+}
+
+.header-tel {
+  margin-left: auto;
+}
+
+.header-contacts {
+  display: flex;
+  gap: 50px;
+}
+
+.header-contact-link {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--accent-color);
+}
+
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-icon:hover,
+.header-icon:focus {
+  fill: var(--accent-color);
+}
