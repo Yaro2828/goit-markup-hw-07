@@ -24,20 +24,19 @@
   align-items: center;
   justify-content: center;
   transition: border-color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .customer-icon {
   fill: var(--svg-primary-color);
   height: 60px;
   transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.customer-link:hover,
-.customer-link:focus {
-  border-color: var(--accent-color);
-}
-
-.customer-link:hover .customer-icon,
-.customer-link:focus .customer-icon {
-  fill: var(--accent-color);
+  .customer-link:hover &,
+  .customer-link:focus & {
+    fill: var(--accent-color);
+  }
 }

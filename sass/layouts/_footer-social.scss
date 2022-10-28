@@ -1,4 +1,3 @@
-
 .footer-social {
   margin-right: 93px;
 }
@@ -28,18 +27,16 @@
   align-items: center;
   justify-content: center;
   transition: background-color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-social-icon {
   fill: var(--background-text-color);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--accent-color);
-}
-
-.footer-social-link:hover .footer-social-icon,
-.footer-social-link:focus .footer-social-icon {
-  fill: var(--background-text-color);
+  .footer-social-link:hover &,
+  .footer-social-link:focus & {
+    fill: var(--background-text-color);
+  }
 }

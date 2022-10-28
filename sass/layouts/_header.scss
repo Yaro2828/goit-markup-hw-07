@@ -9,6 +9,15 @@
   align-items: center;
 }
 
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  display: inline-block;
+}
+
 .header-logo {
   color: var(--accent-color);
   margin-right: 93px;
@@ -39,44 +48,39 @@
   padding-bottom: 32px;
   position: relative;
   transition: color var(--transition-duration) var(--transition-timing-function);
-}
-
-.header-nav-link:hover,
-.header-nav-link:focus {
-  color: var(--accent-color);
-}
-
-.header-nav-link.current {
-  color: var(--accent-color);
-}
-
-.header-nav-link::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
-  left: 0;
-  bottom: 0;
-  position: absolute;
-  opacity: 0;
-}
-
-.header-nav-link:hover::after,
-.header-nav-link:focus::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  left: 0;
-  bottom: 0;
-  position: absolute;
-}
-
-.header-nav-link.current::after {
-  opacity: 1;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &.current {
+    color: var(--accent-color);
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+  }
+  &:hover::after,
+  &:focus::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+  }
+  &.current::after {
+    opacity: 1;
+  }
 }
 
 .header-tel {
@@ -98,19 +102,17 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color var(--transition-duration) var(--transition-timing-function);
-}
-
-.header-contact-link:hover,
-.header-contact-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.header-icon:hover,
-.header-icon:focus {
+&:hover,
+&:focus {
   fill: var(--accent-color);
+}
 }

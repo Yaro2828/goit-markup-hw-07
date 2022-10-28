@@ -39,9 +39,8 @@
   line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-duration) var(--transition-timing-function);
-}
-
-.footer-contacts-link:hover,
-.footer-contacts-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

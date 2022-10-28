@@ -7,14 +7,12 @@
   display: flex;
 }
 
-.gallery-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .gallery-item {
-  width: calc(100% - 60px) / 3;
+  width: calc((100% - 60px) / 3);
   position: relative;
-}
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 
 .gallery-bottom-text {
   width: 370px;

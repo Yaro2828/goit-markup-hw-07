@@ -7,25 +7,18 @@
 .portfolio-hero-item {
   width: calc((100% - 60px) / 3);
   transition: box-shadow var(--transition-duration) var(--transition-timing-function);
-}
-
-.portfolio-hero-item:hover,
-.portfolio-hero-item:focus {
+&:hover,
+&:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-.portfolio-hero-item:last-child {
+&:last-child {
   margin-right: 0;
+}
 }
 
 .portfolio-link {
   display: block;
-}
-
-.portfolio-link:hover .portfolio-overlay-text,
-.portfolio-link:focus .portfolio-overlay-text {
-  transform: translateY(0);
 }
 
 .portfolio-overlay {
@@ -46,6 +39,10 @@
   transform: translateY(100%);
   transition: transform var(--transition-duration) var(--transition-timing-function);
   overflow: auto;
+.portfolio-link:hover &,
+.portfolio-link:focus & {
+  transform: translateY(0);
+}
 }
 
 .portfolio-item-box {

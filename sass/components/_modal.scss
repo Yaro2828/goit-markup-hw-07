@@ -36,11 +36,10 @@
   align-items: center;
   cursor: pointer;
   transition: fill var(--transition-duration) var(--transition-timing-function);
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .is-hidden {

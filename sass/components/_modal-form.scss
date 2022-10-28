@@ -9,9 +9,9 @@
 
 .modal-field {
   margin-bottom: 10px;
-}
-.modal-field:nth-child(4) {
+  &:nth-child(4) {
   margin-bottom: 20px;
+}
 }
 
 .label-name {
