@@ -24,24 +24,11 @@
 }
 
 .footer-input-button {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  display: block;
-  background-color: var(--accent-color);
-  color: var(--background-text-color);
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  padding: 13px 28px;
   min-width: 200px;
-  height: 50px;
   margin-left: 12px;
-  display: inline-flex;
   justify-content: center;
   gap: 10px;
-  cursor: pointer;
+  display: inline-flex;
 }

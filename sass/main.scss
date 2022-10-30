@@ -1,10 +1,12 @@
 
+@import './utils/mixin';
 @import './utils/variables';
 
 @import './base/reset';
 @import './base/common';
 
 @import './components/container';
+@import './components/btn';
 @import './components/logo';
 @import './components/section';
 @import './components/visually-hidden';

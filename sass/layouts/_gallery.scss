@@ -3,18 +3,19 @@
   background-color: var(--background-text-color);
 }
 
-.gallery-list {
+.gallery__list {
   display: flex;
 }
 
-.gallery-item {
+.gallery__item {
   width: calc((100% - 60px) / 3);
   position: relative;
   &:not(:last-child) {
     margin-right: 30px;
   }
+}
 
-.gallery-bottom-text {
+.gallery__bottom-text {
   width: 370px;
   height: 70px;
   bottom: 0;

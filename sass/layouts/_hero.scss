@@ -12,11 +12,10 @@
   background-repeat: no-repeat;
   margin: 0 auto;
 }
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-text-color);
@@ -24,21 +23,7 @@
   margin: 0 auto 30px;
 }
 
-.hero-btn {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
-  color: var(--background-text-color);
-  background: var(--accent-color);
-  cursor: pointer;
-  margin: 0 auto;
-  display: block;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+.order__btn {
   min-width: 216px;
-  height: 50px;
-  border: none;
+  margin: 0 auto;
 }
